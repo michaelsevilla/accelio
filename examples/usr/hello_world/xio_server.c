@@ -89,7 +89,8 @@ static void process_request(struct server_data *server_data,
 	 * before the print and the original character is restored after
 	 * the printf
 	 */
-	if (++server_data->cnt == PRINT_COUNTER) {
+/*	if (++server_data->cnt == PRINT_COUNTER) {  */
+              {
 		str = (char *)req->in.header.iov_base;
 		len = req->in.header.iov_len;
 		if (str) {

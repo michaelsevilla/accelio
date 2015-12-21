@@ -132,6 +132,7 @@ static int on_request(struct xio_session *session,
 	/* attach request to response */
 	tdata->rsp[i].request = req;
 
+        printf("the val of i is %d\n", 1); 
 	xio_send_response(&tdata->rsp[i]);
 	tdata->nsent++;
 
